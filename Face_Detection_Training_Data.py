@@ -7,7 +7,7 @@ Created on Fri Mar 22 23:37:54 2019
 
 """ 1-Read the photo using the webcam
     2-Using a predefined classifier named Haarcascade,detect the face and draw a rectangular boundary around the face.
-    3-Cut out the Region of interest i.e the image bounded by the rectangle by slicing the original image.
+    3-Cut out the Region of interest (ROI) i.e the image bounded by the rectangle by slicing the original image.
     4-Flatten the largest image and store it into a numpy array.
     5-Repeat the above steps some number of times in order to generate training data.
 """
@@ -30,7 +30,7 @@ face_data=[]
 
 #taking an user input ,name of the person whose photo is being taken."
 file_name=input("Enter the name of the person whose is being taken : ")
-#------------------------------------------------------------------------------------------------------
+#----------------------------------READING THE IMAGE----------------------------------------------------------------
 #Driver Code
 while True:
     boolean,frame=cap.read()
@@ -57,7 +57,7 @@ while True:
     """
     
     faces=sorted(faces,key=lambda f:f[2]*f[3],reverse=True)
-    #--------------------------------------------------------------------------------------------------------    
+    #----------------------------GIVING BOUNDARY AND SAVING THE ROI--------------------------------------------------------------------    
     for (x,y,w,h) in faces:
         #here we will draw a rectangle around the face.
         cv2.rectangle(frame,(x,y),(x+w,y+h),(0,255,255),2)
@@ -72,7 +72,7 @@ while True:
         if skip%10==0:
             face_data.append(face_section)
             print(len(face_data))
-    #-------------------------------------------------------------------------------------------------------
+    #--------------------------------------ROI WORK FINISH-----------------------------------------------------------------
     #showing the image here
     cv2.imshow("Photo",frame)
     cv2.imshow("Region of Interest",face_section)
@@ -82,7 +82,8 @@ while True:
     keypressed=cv2.waitKey(1) & 0xFF
     if keypressed==ord('q'):
         break
-#---------------------------------------------------------------------------------------------------------    
+#--------------------------------------------IMAGE PROCESSING DONE-------------------------------------------------------------
+#---------------------------------------SAVING THE DATA INTO NUMPY ARRAY------------------------------------------------------------    
 #converting face data into numpy array
 face_data=np.asarray(face_data) 
 
@@ -91,7 +92,7 @@ face_data=face_data.reshape((face_data.shape[0],-1))
 
 #now saving the data as '.npy' file
 np.save(file_name+'.npy',face_data)
-
+#-----------------------------------SAVING DONE--------------------------------------------------------
 cap.release()
 cv2.destroyAllWindows()        
             
