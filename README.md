@@ -5,7 +5,7 @@
 -Euclidean Distance between two points ((x,y),(a,b)) is given as  = √(x - a)² + (y - b)²
 -Then using these distances we find the k nearest points to the query point.
 -And then we classify the query point to a class whose points are more closer to query point.
--There is no time for training. So order for training is O(1).
+-There is no time required for training the data. So order for training is O(1).
 -All the time required is to find the distance of query point from all the points. So if there are N points and Q query points , then total time complexity of this algorithm will be O(NQ).
 ###### Example
 Suppose Q is a query point and there are two classes namely 0 and 1.
