@@ -13,10 +13,11 @@ a,b,c,d and e are five nearest points to Q. (a,0),(b,1),(c,1),(d,0),(e,1).This m
 Since 3 points from class 1 are closer to Q while 2 from class 0. So it is clear that points from class 1 are more closer hence the probability of Q belonging to class 1 is more.
 Hence Q belongs to class 1.
 This is how KNN Algorithm classifies.
+--------------------------------------------------------------------------------------------------------------------------------
 
 2-There are two python script.
--One is for generating the training data by capturing the images.
--Second one is written to predict the name of the person by using KNN.
+-One is for generating the training data by capturing the images.-
+-Second one is written to predict the name of the person by using KNN.-
 
 ### Haarcascade Classifier
 In this a predefined classifier is used. Its name is Haarcascade Classifier. In this it has been used to read the face.
