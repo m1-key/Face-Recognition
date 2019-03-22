@@ -9,7 +9,8 @@
 -All the time required is to find the distance of query point from all the points. So if there are N points and Q query points , then total time complexity of this algorithm will be O(NQ).
 ###### Example
 Suppose Q is a query point and there are two classes namely 0 and 1.
-a,b,c,d and e are five nearest points to Q. (a,0),(b,1),(c,1),(d,0),(e,1).This means 'a' belongs to class 0 and 'b' belongs to class 1 and so on.
+Let say there are total m points in the training set. First the distance of all these points from query point will be calculated.
+Let say out of those m points a,b,c,d and e are five nearest points to Q. (a,0),(b,1),(c,1),(d,0),(e,1).This means 'a' belongs to class 0 and 'b' belongs to class 1 and so on.
 Since 3 points from class 1 are closer to Q while 2 from class 0. So it is clear that points from class 1 are more closer hence the probability of Q belonging to class 1 is more.
 Hence Q belongs to class 1.
 This is how KNN Algorithm classifies.
