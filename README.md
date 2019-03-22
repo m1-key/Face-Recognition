@@ -23,7 +23,9 @@ In this a predefined classifier is used. Its name is Haarcascade Classifier. In 
 Here is the link for full documentation of Haarcascade.  "https://docs.opencv.org/3.4.3/d7/d8b/tutorial_py_face_detection.html"
 
 
-3 In this all the images are 3 layered (BGR - Blue Green Red).  So if we store this image as an numpy array , it will be a 3D array.
+3-In this all the images are 3 layered (BGR - Blue Green Red).  So if we store this image as an numpy array , it will be a 3D array.
   This 3D array is flatten into a single row array so that Euclidean distance can be calculated.
   
-4 After this using KNN, predicition is made. 
+4-After this using KNN, predicition is made.
+
+5-First Face_Detection_Training_Data script will be executed in order to generate training data and then Face_Recognition in order to predict the result.
