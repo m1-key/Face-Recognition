@@ -13,7 +13,6 @@ a,b,c,d and e are five nearest points to Q. (a,0),(b,1),(c,1),(d,0),(e,1).This m
 Since 3 points from class 1 are closer to Q while 2 from class 0. So it is clear that points from class 1 are more closer hence the probability of Q belonging to class 1 is more.
 Hence Q belongs to class 1.
 This is how KNN Algorithm classifies.
---------------------------------------------------------------------------------------------------------------------------------
 
 2-There are two python script.
 -One is for generating the training data by capturing the images.-
@@ -24,6 +23,6 @@ In this a predefined classifier is used. Its name is Haarcascade Classifier. In 
 Here is the link for full documentation of Haarcascade.  "https://docs.opencv.org/3.4.3/d7/d8b/tutorial_py_face_detection.html"
 
 
-3 -In this all the images are 3 layered (BGR - Blue Green Red).  So if we store this image as an numpy array , it will be a 3D array.
-  - This 3D array is flatten into a single row array so that Euclidean distance can be calculated.
-4- After this using KNN, predicition is made. 
+3 In this all the images are 3 layered (BGR - Blue Green Red).  So if we store this image as an numpy array , it will be a 3D array.
+  This 3D array is flatten into a single row array so that Euclidean distance can be calculated.
+4 After this using KNN, predicition is made. 
