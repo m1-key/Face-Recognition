@@ -25,4 +25,5 @@ Here is the link for full documentation of Haarcascade.  "https://docs.opencv.or
 
 3 In this all the images are 3 layered (BGR - Blue Green Red).  So if we store this image as an numpy array , it will be a 3D array.
   This 3D array is flatten into a single row array so that Euclidean distance can be calculated.
+  
 4 After this using KNN, predicition is made. 
