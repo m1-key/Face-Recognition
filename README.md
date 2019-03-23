@@ -32,7 +32,7 @@ This is how KNN Algorithm classifies a given point.
 * Put all the three files (First Face_Detection_Training_Data , Face_Recognition , haarcascade_frontalface_alt.xml) into a single folder.
 * Install all the important packages first like OpenCV and Numpy as they have been used extensively in this project. 
 * Run the Face_Detection_Training_Data script first , it will generate training data by capturing the image of one person at a time.
-* Repeat the above step to generate multiple training dataset.
+* Repeat the above step with different person to generate multiple training dataset.
 * After above steps when the training dataset is created , run Face_Recognition in order to read the image and predict the result.
 
 ---
