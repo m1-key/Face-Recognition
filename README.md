@@ -32,7 +32,8 @@ This is how KNN Algorithm classifies a given point.
 * Put all the three files (First Face_Detection_Training_Data , Face_Recognition , haarcascade_frontalface_alt.xml) into a single folder.
 * Install all the important packages first like OpenCV and Numpy as they have been used extensively in this project. 
 * Run the Face_Detection_Training_Data script first , it will generate training data by capturing the image of one person at a time.
-* After above step when the training data is created , run Face_Recognition in order to read the image and predict the result.
+* Repeat the above step to generate multiple training dataset.
+* After above steps when the training dataset is created , run Face_Recognition in order to read the image and predict the result.
 
 ---
 
@@ -45,7 +46,9 @@ Here is the link for full documentation of Haarcascade.  ``` https://docs.opencv
 
 ### How this program works ? 
 In this all the images read are 3 layered (BGR - Blue Green Red).  So if we store this image as an numpy array , it will be a 3D array.
-This 3D array is flatten into a single row array so that Euclidean distance can be calculated. After calculating the distance , k nearest neighbours are determined and then the output is predicted.
+This 3D array is flatten into a single row array. So the training data of a single person have multiple rows , each row have information about the image. A unique ID is allocated to each training data which helps in prediction. So training dataset will have multiple training data. 
+
+When we read the image for prediction , it is also flatten so that training data and this image have same dimension as we have to find Euclidean distance so both training and test data must have same dimension. After calculating the distance , k nearest neighbours are determined and then the output is predicted according to KNN.
 
 ---
 
