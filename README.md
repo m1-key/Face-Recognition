@@ -20,7 +20,7 @@ Let say out of those m points a,b,c,d and e are five nearest points to Q.
 Since 3 points from class 1 are closer to Q while 2 from class 0. 
 So it is clear that points from class 1 are more closer hence the probability of Q belonging to class 1 is more.
 Hence Q belongs to class 1.
-This is how KNN Algorithm classifies a given point.
+This is how KNN Algorithm classifies a given point to a particular class.
 ```
 ---
 ### There are two python script in this project
