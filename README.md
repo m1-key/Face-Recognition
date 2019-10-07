@@ -1,4 +1,8 @@
 # Face-Recognition
+<img src="https://www.vigilantsolutions.com/wp-content/uploads/facialrecog.jpg"
+     alt="fr"
+     style="float: left; margin-right: 10px;" />
+
 1. This is a face-recognition project using K-Nearest Neighbours algorithm.
 2. It will predict the name of the person by reading his/her image using KNN algorithm.
 ---
