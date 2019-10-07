@@ -39,7 +39,12 @@ This is how KNN Algorithm classifies a given point to a particular class.
 
 ### Haarcascade Classifier
 
-In this a predefined classifier is used. Its name is Haarcascade Classifier. In this it has been used to read the face.
+In this a predefined classifier is used. Its name is Haarcascade Classifier. In this it has been used to read the face.A Haar Cascade is based on “Haar Wavelets” which is used to create  haar like features.Haar-like features are digital image features (alternate feature set instead of usual image intensities) used in object recognition.
+
+### Creation of Haar like features
+A Haar-like feature considers adjacent rectangular regions at a specific location in a detection window, sums up the pixel intensities in each region and calculates the difference between these sums. This difference is then used to categorize subsections of an image.
+For example, with a human face, it is a common observation that among all faces the region of the eyes is darker than the region of the cheeks. Therefore a common Haar feature for face detection is a set of two adjacent rectangles that lie above the eye and the cheek region.
+
 Here is the link for full documentation of Haarcascade.  ``` https://docs.opencv.org/3.4.3/d7/d8b/tutorial_py_face_detection.html ```
 
 ---
