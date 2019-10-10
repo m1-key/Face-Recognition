@@ -56,6 +56,6 @@ This 3D array is flatten into a single row array. So the training data of a sing
 When we read the image for prediction , it is also flatten so that training data and this image have same dimension as we have to find Euclidean distance so both training and test data must have same dimension. After calculating the distance , k nearest neighbours are determined and then the output is predicted according to KNN.
 
 ---
-
+This is it
 
 
